@@ -1,0 +1,104 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;600&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 90px;
+  background: linear-gradient(#68EACC 0%, #497BE8 100%);
+
+}
+
+.wrapper{
+
+  background: #fff;
+  max-width: 400px;
+  width: 100%;
+  padding: 25px;
+  border-radius: 5px;
+  box-shadow: 0px 10px 15px rgba(0,0,0,0.1);
+  height: 500px;
+  margin-bottom: 50px;
+}
+
+.taskform {
+  margin: 20px 0;
+  width: 100%;
+  display: flex;
+  height: 45px;
+}
+
+
+button {
+  border: 1px solid rgb(105, 197, 255);
+  border-radius: 5px;
+  background-color: rgb(227, 248, 255);
+  color: rgb(105, 197, 255);
+  text-align: center;
+  padding: 5px;
+  margin-left: 10px;
+}
+
+.input1{
+  width: 85%;
+  height: 100%;
+  outline: none;
+  border-radius: 3px;
+  border: 1px solid #ccc;
+  font-size: 17px;
+  padding-left: 15px;
+  transition: all 0.3s ease;
+}
+
+input input:focus{
+  border-color: #8E49E8;
+}
+
+input[type="text"] {
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid black;
+}
+
+#tasks {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  position: relative;
+  height: 45px;
+  line-height: 45px;
+  margin-bottom: 8px;
+  border-radius: 3px;
+  padding: 0 15px;
+  cursor: default;
+}
+
+label{
+  margin-left: 10px;
+  font: 'Karla', sans-serif;
+}
+
+.task-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+.checkbox {
+  margin-right: 20px;
+}
+
+:checked + label {
+  text-decoration: line-through;
+  color: grey;
+}
