@@ -3,13 +3,15 @@
   <head>
     <meta charset="utf-8">
     <title>To-do List</title>
-    <link href="assets/style.css" rel="stylesheet" />
+    <link href="assets/style.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="assets/responsive.css">
   </head>
   <body>
-       <div class="wrapper">
+       <div class="wrapper" id="wrapped">
          <h1>
-           To-Do List
+           to do list
          </h1>
+        
           <div>
             <form class="taskform" id="task-form">
               <input id="task-input" 
@@ -20,6 +22,7 @@
               <button 
               type="submit">Add</button>
             </form>
+            </h4>
           <div id="tasks"></div>
           <script src="assets/script.js"></script>
         </div>
